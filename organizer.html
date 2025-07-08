@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Organizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="header-placeholder"></div>
+  <main>
+    
+      <h2>Organized by</h2>
+      <p>Ilaria Colazzo<br>University of Leeds (UK)<br>i.colazzo at leeds.ac.uk</p>
+    
+  </main>
+
+<div id="footer-placeholder"></div>
+</body>
+</html>
+
+
+<script>
+  fetch('header.html')
+    .then(res => res.text())
+    .then(html => document.getElementById('header-placeholder').innerHTML = html);
+
+  fetch('footer.html')
+    .then(res => res.text())
+    .then(html => document.getElementById('footer-placeholder').innerHTML = html);
+</script>

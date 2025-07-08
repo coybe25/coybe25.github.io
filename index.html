@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="header-placeholder"></div>
+
+  <main>
+    
+      <h2>About the Workshop</h2>
+      <p>This one-day conference aims to bring together researchers working on the <span class="highlight">combinatorial aspects</span> of the Yang–Baxter equation.</p>
+
+      
+       <h2>Speakers</h2>
+      <div class="speaker-grid">
+        <div class="speaker">
+          <img src="img/doikou.jpg" alt="Anastasia Doikou">
+          <div class="speaker-name">Anastasia Doikou</div>
+          <div class="speaker-affiliation"> Heriot-Watt University (UK)</div>
+        </div>
+        <div class="speaker">
+          <img src="img/jespers.jpeg" alt="Eric Jespers">
+          <div class="speaker-name">Eric Jespers</div>
+          <div class="speaker-affiliation">Vrije Universiteit Brussel (Belgium)</div>
+        </div>
+        <div class="speaker">
+          <img src="img/smoktunowicz.jpg" alt="Agata Smoktunowicz">
+          <div class="speaker-name">Agata Smoktunowicz</div>
+          <div class="speaker-affiliation">University of Edinburgh (UK)</div>
+        </div>
+        <div class="speaker">
+          <img src="img/colazzo.jpg" alt="Ilaria Colazzo">
+          <div class="speaker-name">Ilaria Colazzo</div>
+          <div class="speaker-affiliation">University of Leeds (UK)</div>
+        </div>
+      </div>
+
+    
+  </main>
+<div id="footer-placeholder"></div>
+</body>
+</html>
+
+
+<script>
+  fetch('header.html')
+    .then(res => res.text())
+    .then(html => document.getElementById('header-placeholder').innerHTML = html);
+
+  fetch('footer.html')
+    .then(res => res.text())
+    .then(html => document.getElementById('footer-placeholder').innerHTML = html);
+</script>

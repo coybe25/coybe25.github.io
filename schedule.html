@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Speakers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="header-placeholder"></div>
+
+
+
+  <main>
+    
+   <section id="schedule">
+      <h2>Tentative schedule</h2>
+      <h3>Morning Session</h3>
+      <ul>
+        <li><strong>09:00 - 09:30</strong> | Registration, Welcome Coffee &amp; Opening</li>
+        <li><strong>09:30 - 10:30</strong> | Agata Smoktunowicz (University of Edinburgh)</li>
+        <li><strong>10:30 - 11:30</strong> | Gong Talks: Short presentations from early-career researchers</li>
+        <li><strong>11:30 - 12:30</strong> | <strong>Ilaria Colazzo</strong> (University of Leeds)</li>
+        <li><strong>12:30 - 14:00</strong> | Lunch</li>
+      </ul>
+      <h3>Afternoon Session</h3>
+      <ul>
+        <li><strong>14:00 - 15:00</strong> | Anastasia Doiku (Heriot-Watt University)</li>
+        <li><strong>15:00 - 16:00</strong> | Eric Jespers (Vrije Universiteit Brussel)</li>
+        <li><strong>16:00 - 17:30</strong> | Reception</li>
+      </ul>
+    </section>
+
+  </main>
+
+
+<div id="footer-placeholder"></div>
+</body>
+</html>
+
+<script>
+  fetch('header.html')
+    .then(res => res.text())
+    .then(html => document.getElementById('header-placeholder').innerHTML = html);
+
+  fetch('footer.html')
+    .then(res => res.text())
+    .then(html => document.getElementById('footer-placeholder').innerHTML = html);
+</script>

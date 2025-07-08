@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="header-placeholder"></div>
+
+
+
+  <main>
+    
+      <h2>Registration</h2>
+      <p>Participation is free, but registration is required.</p>
+      <p>👉 <a href="https://forms.cloud.microsoft/e/ce97QCCqUJ">Click here to register</a></p>
+
+      <iframe width="640px" height="480px" src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=qO3qvR3IzkWGPlIypTW3y2uem2MESJZFqhZUGXakxN5UMkUwNkhJSEFaTlVYUFM4ODA1MThZU01XNi4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+  </main>
+
+
+<div id="footer-placeholder"></div>
+</body>
+</html>
+
+
+<script>
+  fetch('header.html')
+    .then(res => res.text())
+    .then(html => document.getElementById('header-placeholder').innerHTML = html);
+
+  fetch('footer.html')
+    .then(res => res.text())
+    .then(html => document.getElementById('footer-placeholder').innerHTML = html);
+</script>
